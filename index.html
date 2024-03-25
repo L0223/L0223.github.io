@@ -60,7 +60,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"l0223.github.io.git","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"l0223.github.io.git","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -222,7 +222,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/%E6%88%91%E4%B8%8D%E6%98%AF%E7%9D%A1%E7%A5%9E1.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default2.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -263,18 +263,70 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/03/25/Hexo%E5%9F%BA%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%86%8C%E6%90%AD%E5%BB%BA/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/L0223/sources/images/gallery/%E6%96%87%E7%AB%A0%E5%9B%BE/202403252314411.png" srcset="/img/loading.gif" lazyload alt="Hexo基于fluid模板的相册搭建">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2024/03/25/First%20post/" target="_blank">
-          欢迎来到晓老板之家~
+        <a href="/2024/03/25/Hexo%E5%9F%BA%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%86%8C%E6%90%AD%E5%BB%BA/" target="_blank">
+          Hexo基于fluid模板的相册搭建
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2024/03/25/First%20post/" target="_blank">
+      <a class="index-excerpt " href="/2024/03/25/Hexo%E5%9F%BA%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%86%8C%E6%90%AD%E5%BB%BA/" target="_blank">
         <div>
-          Welcome, this is my first blog, going forward I’ll be documenting my studies and life here, thanks for following~ Quick Start Create a new post 1$ hexo new &quot;My New Post&quot; More info: Writing R
+          Hexo主要是用于发表博客也就是文章的静态网页框架工具，所以官方很少给到相册搭建的教程，而我刚开始尝试搭建网页的目的就是为了制作一个网页相册，因此，我死磕了接近一个星期，才大概把这个博客网页集成相册功能的方法搞懂。 先上一张文件夹结构图：  123# 相册的生成需要先用create.js脚本对images\gallery\下的相册文件进行预处理# 示例 F:\L0223\L0223.github.
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-03-25 22:31" pubdate>
+              2024-03-25
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA/">#网页搭建</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/03/25/First%20post/" target="_blank">
+          <img src="https://www.obzhi.com/wp-content/uploads/2022/03/boji2.png" srcset="/img/loading.gif" lazyload alt="欢迎来到晓老板之家">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/03/25/First%20post/" target="_blank">
+          欢迎来到晓老板之家
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2024/03/25/First%20post/" target="_blank">
+        <div>
+          Welcome, this is my first blog, going forward I’ll be documenting my studies and life here, thanks for following~
         </div>
       </a>
 
@@ -296,7 +348,13 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/03/25/%E5%AF%BB%E6%89%BE%E4%BA%BA%E7%94%9F%E4%B9%8B%E8%B7%AF/" target="_blank">
+          <img src="/img/pic/1.jpg" srcset="/img/loading.gif" lazyload alt="《如何找到想做的事》">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2024/03/25/%E5%AF%BB%E6%89%BE%E4%BA%BA%E7%94%9F%E4%B9%8B%E8%B7%AF/" target="_blank">
@@ -305,7 +363,7 @@
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2024/03/25/%E5%AF%BB%E6%89%BE%E4%BA%BA%E7%94%9F%E4%B9%8B%E8%B7%AF/" target="_blank">
+      <a class="index-excerpt " href="/2024/03/25/%E5%AF%BB%E6%89%BE%E4%BA%BA%E7%94%9F%E4%B9%8B%E8%B7%AF/" target="_blank">
         <div>
           人生道路的选择 Step 1. 了解自己 价值观（原则和标准）    Question Answer     你有尊敬的人吗？他是谁？为什么尊敬他？为什么崇拜他？喜欢他什么地方？    青春期或活力期是否有你我影响很大的事情？    现在社会有什么需要改进的地方？    在朋友眼里你是一个看重什么东西的人？    你会给别人什么建议？或不希望别人给你什么建议？     天赋与才能（你的说明书）
         </div>
@@ -336,7 +394,13 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/03/25/%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" target="_blank">
+          <img src="/img/pic/3.png" srcset="/img/loading.gif" lazyload alt="网页搭建疑难问题解决记录~">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2024/03/25/%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" target="_blank">
@@ -345,7 +409,7 @@
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2024/03/25/%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" target="_blank">
+      <a class="index-excerpt " href="/2024/03/25/%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" target="_blank">
         <div>
           图床问题：由于反盗链接等问题导致原始图床链接失效，可以通过图片缓存服务网站修复，只需要在原链接上添加以下四种开头即可正常   WordPress： https://i0.wp.com/图片地址（图片地址要掉 https://）   Weserv.nl： https://images.weserv.nl/?url=图片地址   百度 1： https://image.baidu.com/sear
         </div>

@@ -4,11 +4,30 @@
   
   
   <entry>
-    <title>欢迎来到晓老板之家~</title>
+    <title>Hexo基于fluid模板的相册搭建</title>
+    <link href="/2024/03/25/Hexo%E5%9F%BA%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%86%8C%E6%90%AD%E5%BB%BA/"/>
+    <url>/2024/03/25/Hexo%E5%9F%BA%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%86%8C%E6%90%AD%E5%BB%BA/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Hexo主要是用于发表博客也就是文章的静态网页框架工具，所以官方很少给到相册搭建的教程，而我刚开始尝试搭建网页的目的就是为了制作一个网页相册，因此，我死磕了接近一个星期，才大概把这个博客网页集成相册功能的方法搞懂。</p><p>先上一张文件夹结构图：</p><p><img src="https://cdn.jsdelivr.net/gh/L0223/sources/images/gallery/%E6%96%87%E7%AB%A0%E5%9B%BE/202403252309157.png" alt="相册文件夹结构图"></p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmd"># 相册的生成需要先用create.js脚本对images\gallery\下的相册文件进行预处理<br># 示例 F:\L0223\L0223.github.io\myblog\source\images&gt;node gallery/create.js<br>node gallery/create.js<br></code></pre></td></tr></table></figure><ul><li>本过程使用到的仓库：<ol><li><a href="https://github.com/L0223/sources.git">https://github.com/L0223/sources.git</a><ul><li>用于存放hexo配置文件夹source的仓库</li><li>该仓库已经使用GitHub—desktop连接，可直接在app里push</li><li>同时可以使用picgo上传图片，实现Jsdeliver+cdn加速</li></ul></li><li><a href="https://github.com/L0223/L0223.github.io.git">https://github.com/L0223/L0223.github.io.git</a><ul><li>用于hexo server</li><li>通过GitHub-page和vercel部署</li></ul></li></ol></li><li>本文参考了诸多其他博主的教程：</li></ul><ol><li><p><a href="https://zyxelva.github.io/posts/45280.html#3-%E5%8A%A0%E8%BD%BD-js%E5%92%8Ccss%E6%96%87%E4%BB%B6">【Hexo】基于Fluid主题的Hexo增加相册功能实践 | Kezade</a></p></li><li><p><a href="https://zhuanlan.zhihu.com/p/346643522">如何使用jsDelivr+Github 实现免费CDN加速? - 知乎</a></p></li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>网页搭建</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>欢迎来到晓老板之家</title>
     <link href="/2024/03/25/First%20post/"/>
     <url>/2024/03/25/First%20post/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome, this is my first blog, going forward I’ll be documenting my studies and life here, thanks for following~</p><h2 id="Quick-Start">Quick Start</h2><h3 id="Create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome, this is my first blog, going forward I’ll be documenting my studies and life here, thanks for following~</p>]]></content>
     
     
     
