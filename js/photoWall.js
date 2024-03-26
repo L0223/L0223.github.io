@@ -1,6 +1,7 @@
 var imgDataPath = "/photos/photos.json"; //图片名称高宽信息json文件路径
 //var imgPath = "/images/gallery/"; //图片访问路径, 这里参考文章开头提到的CDN加速
-var imgPath = "https://cdn.jsdelivr.net/gh/L0223/sources/images/gallery/"; //图片访问路径, 这里参考文章开头提到的CDN加速
+var imgPath = "https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/gallery/";
+//var imgPath = "https://cdn.jsdelivr.net/gh/L0223/sources/images/gallery/"; //图片访问路径, 这里参考文章开头提到的CDN加速
 var imgMaxNum = 50; //图片显示数量
 
 var windowWidth =
