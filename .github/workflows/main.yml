@@ -1,4 +1,4 @@
-name: Blog CI/CD # 脚本 workflow 名称
+name: Blog CI/CD  # 脚本 workflow 名称
 
 on:
   push:
@@ -49,10 +49,8 @@ jobs:
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-
       - name: Deploy L0223's Blog # 设置 git 信息并推送静态博客文件
         run: |
-
           git config --global user.name "L0223"
           git config --global user.email "18312158453@163.com"
           hexo deploy
