@@ -150,5 +150,7 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:L0223/L0223.github.io.git
+  ## repo: git@github.com:L0223/L0223.github.io.git
+  repository:
+    github: https://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@github.com:L0223/L0223.github.io.git
   branch: main
