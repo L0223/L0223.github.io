@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - main # default branch
+      - hexooo # default branch
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
           token: ${{ secrets.HEXO_DEPLOY_KEY }}
           # If your repository depends on submodule, please see: https://github.com/actions/checkout
           submodules: recursive
-      - name: Use Node.js 16.x
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v2
         with:
           node-version: '16'
