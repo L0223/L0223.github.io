@@ -37,8 +37,8 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-node-
 
-      - name: Install Dependencies
-        run: npm install
+      # - name: Install Dependencies
+      #   run: npm install
 
       - name: Build
         run: npm run build
