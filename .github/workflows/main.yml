@@ -38,7 +38,7 @@ jobs:
       - name: Build Blog # 编译创建静态博客文件
         run: |
           hexo clean
-          hexo g
+          hexo generate
           echo "build blog successful"
       - name: Setup Hexo
         env:
@@ -49,6 +49,7 @@ jobs:
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+
       - name: Deploy L0223's Blog # 设置 git 信息并推送静态博客文件
         run: |
           git config --global user.name "L0223"
