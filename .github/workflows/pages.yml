@@ -49,20 +49,19 @@ jobs:
 
       - name: Deploy to main branch
         env:
-          DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}  
-          run: |
-            eval "$(ssh-agent -s)"
-            ssh-add - <<< "$DEPLOY_KEY" 
-            cd ./public && git init && git add .
-            git config user.name "L0223"
-            git config user.email "18312158453@163.com"
-            git add .
-            git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-            git push --force origin main
-        # git checkout main
-        # git pull origin main
-        # rm -rf .
-        # cp -r public/* .
-        # git add .
-        # git commit -m "Update pages"
-        # git push origin main
+          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 700 ~/.ssh
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email "18312158453@163.com"
+          git config --global user.name "L0223"
+          npm install hexo-cli -g
+          npm install
+
+      - name: Deploy
+        run: |
+          hexo clean
+          hexo deploy
