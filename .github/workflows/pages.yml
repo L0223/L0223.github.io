@@ -39,16 +39,29 @@ jobs:
 
       # - name: Install Dependencies
       #   run: npm install
-
-      - name: Build
-        run: npm run build
+      - name: Generate files
+       # 编译 markdown 文件
+        run: |
+          hexo clean
+          hexo generate
+      # - name: Build
+      #   run: npm run build
 
       - name: Deploy to main branch
+        env: 
+        # Github 仓库
+        GITHUB_REPO: git@github.com:L0223/L0223.github.io.git
         run: |
-          git checkout main
-          git pull origin main
-          rm -rf .
-          cp -r public/* .
+          cd ./public && git init && git add .
+          git config user.name "yifanzheng"
+          git config user.email "zhengyifan1996@outlook.com"
           git add .
-          git commit -m "Update pages"
-          git push origin main
+          git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+          git push --force --quiet "https://${{ secrets.HEXO_DEPLOY_KEY }}@$GITHUB_REPO" main:main
+        # git checkout main
+        # git pull origin main
+        # rm -rf .
+        # cp -r public/* .
+        # git add .
+        # git commit -m "Update pages"
+        # git push origin main
