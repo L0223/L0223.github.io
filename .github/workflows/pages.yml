@@ -48,13 +48,17 @@ jobs:
       #   run: npm run build
 
       - name: Deploy to main branch
-        run: |
-          cd ./public && git init && git add .
-          git config user.name "L0223"
-          git config user.email "18312158453@163.com"
-          git add .
-          git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-          git push --force --quiet "https://${{ secrets.HEXO_DEPLOY_KEY }}@github.com:L0223/L0223.github.io.git" main:main
+        env:
+          DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}  
+          run: |
+            eval "$(ssh-agent -s)"
+            ssh-add - <<< "$DEPLOY_KEY" 
+            cd ./public && git init && git add .
+            git config user.name "L0223"
+            git config user.email "18312158453@163.com"
+            git add .
+            git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+            git push --force origin main
         # git checkout main
         # git pull origin main
         # rm -rf .
