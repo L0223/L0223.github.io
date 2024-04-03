@@ -54,7 +54,7 @@ jobs:
           git config user.email "18312158453@163.com"
           git add .
           git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-          git push --force --quiet "https://${{ secrets.HEXO_DEPLOY_KEY }}@$github.com:L0223/L0223.github.io.git" main:main
+          git push --force --quiet "https://${{ secrets.HEXO_DEPLOY_KEY }}@github.com:L0223/L0223.github.io.git" main:main
         # git checkout main
         # git pull origin main
         # rm -rf .
