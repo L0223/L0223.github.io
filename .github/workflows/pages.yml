@@ -29,8 +29,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: node_modules
-          key: ${{ runner.OS }}-npm-cache          
-          restore-keys: ${{ runner.OS }}-npm-cache
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
 
       - name: Install Dependencies
         run: npm install
