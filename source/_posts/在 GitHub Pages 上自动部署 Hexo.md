@@ -1,7 +1,6 @@
 ---
 title: 在 GitHub Pages 上自动部署 Hexo
-date: 2024-04-03T23:04:52Z
-lastmod: 2024-04-05T23:17:19Z
+date: 2024-04-05T23:17:19Z
 author: lynx
 tags: 网页搭建
 categories: 生产指南

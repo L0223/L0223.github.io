@@ -1,6 +1,6 @@
 ---
 title: 欢迎来到晓老板之家
-date:
+date: 2024-03-25
 author:         #作者
 tags:           #标签
 categories:     #分类
