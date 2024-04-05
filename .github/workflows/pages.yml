@@ -32,11 +32,11 @@ jobs:
         with:
           node-version: '20'
       
-      # # 全局安装 Hexo
-      # - name: Install Hexo globally
-      #   run: |
-      #     npm install -g hexo-cli
-      #     npm install
+      # 全局安装 Hexo
+      - name: Install Hexo globally
+        run: |
+          npm install -g hexo-cli
+          npm install
 
       # 缓存 NPM 依赖
       - name: Cache NPM dependencies
@@ -47,14 +47,9 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-node-
 
-      # # 生成文件
-      # - name: Generate files
-      #  # 编译 markdown 文件
-      #   run: |
-      #     hexo clean
-      #     hexo generate
-      # # - name: Build
-      # #   run: npm run build
+      # 构建hexo博客（可选）
+      # - name: Build
+      #   run: npm run build
 
       # 使用环境变量 ACTION_DEPLOY_KEY 部署到主分支
       - name: Deploy to main branch
@@ -68,8 +63,6 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "18312158453@163.com"
           git config --global user.name "L0223"
-          npm install hexo-cli -g
-          npm install
 
       # 部署
       - name: Deploy
