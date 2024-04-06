@@ -4,8 +4,8 @@ date: 2024-04-05T23:17:19Z
 author: lynx
 tags: 网页搭建
 categories: 生产指南
-index_img: https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/siyuanpic/20240405230721.png
-banner_img: https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/siyuanpic/20240405230721.png
+index_img: https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/gallery/%E6%96%87%E7%AB%A0%E5%9B%BE/202404062119199.png
+banner_img: https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/gallery/%E6%96%87%E7%AB%A0%E5%9B%BE/202404062119199.png
 ---
 
 # Github Action 介绍
