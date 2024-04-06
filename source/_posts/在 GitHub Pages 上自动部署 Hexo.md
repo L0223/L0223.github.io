@@ -109,8 +109,8 @@ jobs:
       # 设置 Git 用户信息
       - name: Set up Git user information
         run: |
-          git config --global user.name "L0223"
-          git config --global user.email "18312158453@163.com"
+          git config --global user.name "XXX"
+          git config --global user.email "XXX@XXX.com"
 
       # 设置 Node.js 20.x 版本
       - name: Set up Node.js 20.x
@@ -132,10 +132,6 @@ jobs:
           key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.OS }}-node-
-
-      # 构建hexo博客（可选）
-      # - name: Build
-      #   run: npm run build
 
       # 使用环境变量 ACTION_DEPLOY_KEY 部署到主分支
       - name: Deploy to main branch
