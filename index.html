@@ -1,0 +1,718 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Yeahill Lin">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Lynx&#39;s Blog">
+<meta property="og:url" content="https://l0223.github.io.git/index.html">
+<meta property="og:site_name" content="Lynx&#39;s Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Yeahill Lin">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Lynx&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" custom_css="&#x2F;css&#x2F;fold_code,&#x2F;css&#x2F;iconfont_fold&#x2F;iconfont.css" href="/.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"l0223.github.io.git","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Lynx&#39;s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/category/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/photos/" target="_self">
+                <i class="iconfont icon-image"></i>
+                <span>photos</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/gallery/文章图/default2.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="欢迎来到Lynx的博客"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/03/25/First%20post/" target="_blank">
+          <img src="https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/gallery/%E6%96%87%E7%AB%A0%E5%9B%BE/6.png" srcset="/img/loading.gif" lazyload alt="欢迎来到晓老板之家">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+          <i class="index-pin iconfont icon-top" title="Pin on top"></i>
+        
+        <a href="/2024/03/25/First%20post/" target="_blank">
+          欢迎来到晓老板之家
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2024/03/25/First%20post/" target="_blank">
+        <div>
+          Welcome! This is my first blog, going forward I’ll be documenting my studies and life here, thanks for following ~
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-03-25 00:00" pubdate>
+              2024-03-25
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/04/08/Hexo%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89/" target="_blank">
+          <img src="https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/siyuanpic/20240408103905.png" srcset="/img/loading.gif" lazyload alt="Hexo网页搭建记录（二）">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/04/08/Hexo%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89/" target="_blank">
+          Hexo网页搭建记录（二）
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2024/04/08/Hexo%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89/" target="_blank">
+        <div>
+          ‍ 书接上回👉：Hexo网页搭建记录（一） (qq.com)。 上回讲到，Hexo在本地的安装、配置以及部署。 🤔但怎样才能让别人在网上看得到我的博客？ 这篇记录，或许能提供一个低成本的易上手的方案。 简介   Github pages 关于 GitHub Pages - GitHub 文档。GitHub Pages 是一项静态站点托管服务，它直接从 GitHub 上的仓库获取 HTML、C
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-04-08 11:55" pubdate>
+              2024-04-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%9F%E4%BA%A7%E6%8C%87%E5%8D%97/" class="category-chain-item">生产指南</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA/">#网页搭建</a>
+            
+              <a href="/tags/hexo/">#hexo</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/04/07/Hexo%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/" target="_blank">
+          <img src="https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/siyuanpic/20240408103905.png" srcset="/img/loading.gif" lazyload alt="Hexo网页搭建记录（一）">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/04/07/Hexo%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/" target="_blank">
+          Hexo网页搭建记录（一）
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2024/04/07/Hexo%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/" target="_blank">
+        <div>
+          ‍ 🙄Hexo 是啥？ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。官方文档 | Hexo 🤔 怎么装？ 🧑‍🌾 环境安装： 主要是 git 和 node.js 的安装，具体可参考我上一篇推文 Hexo 网页搭建环境安装 (qq.com) Hexo 网页搭建环境安装-CSDN 博客 🧑
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-04-07 09:18" pubdate>
+              2024-04-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%9F%E4%BA%A7%E6%8C%87%E5%8D%97/" class="category-chain-item">生产指南</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA/">#网页搭建</a>
+            
+              <a href="/tags/hexo/">#hexo</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/04/05/%E5%9C%A8%20GitHub%20Pages%20%E4%B8%8A%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%20Hexo/" target="_blank">
+          <img src="https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/gallery/%E6%96%87%E7%AB%A0%E5%9B%BE/202404062119199.png" srcset="/img/loading.gif" lazyload alt="在 GitHub Pages 上自动部署 Hexo">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/04/05/%E5%9C%A8%20GitHub%20Pages%20%E4%B8%8A%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%20Hexo/" target="_blank">
+          在 GitHub Pages 上自动部署 Hexo
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2024/04/05/%E5%9C%A8%20GitHub%20Pages%20%E4%B8%8A%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%20Hexo/" target="_blank">
+        <div>
+          Github Action 介绍 GitHub Actions 是 GitHub 于 2018 年 10 月推出的持续集成服务。 GitHub Actions 的工作原理如下：  当我们设置好需要自动化执行的任务脚本（存放在 .github/workflows​ 目录下的 .yml​ 文件）后，GitHub Actions 监控当前仓库的某一个操作（如 push）。 一旦有此操作发生，GitHub
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-04-05 23:17" pubdate>
+              2024-04-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%9F%E4%BA%A7%E6%8C%87%E5%8D%97/" class="category-chain-item">生产指南</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA/">#网页搭建</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/03/26/%E5%AF%BB%E6%89%BE%E4%BA%BA%E7%94%9F%E4%B9%8B%E8%B7%AF/" target="_blank">
+          <img src="https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/gallery/%E6%96%87%E7%AB%A0%E5%9B%BE/2.jpg" srcset="/img/loading.gif" lazyload alt="《如何找到想做的事》">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/03/26/%E5%AF%BB%E6%89%BE%E4%BA%BA%E7%94%9F%E4%B9%8B%E8%B7%AF/" target="_blank">
+          《如何找到想做的事》
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2024/03/26/%E5%AF%BB%E6%89%BE%E4%BA%BA%E7%94%9F%E4%B9%8B%E8%B7%AF/" target="_blank">
+        <div>
+          人生道路的选择 Step 1. 了解自己 价值观（原则和标准）    Question Answer     你有尊敬的人吗？他是谁？为什么尊敬他？为什么崇拜他？喜欢他什么地方？    青春期或活力期是否有你我影响很大的事情？    现在社会有什么需要改进的地方？    在朋友眼里你是一个看重什么东西的人？    你会给别人什么建议？或不希望别人给你什么建议？     天赋与才能（你的说明书）
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-03-26 00:00" pubdate>
+              2024-03-26
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%88%90%E9%95%BF/">#成长</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2024/03/25/Hexo%E5%9F%BA%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%86%8C%E6%90%AD%E5%BB%BA/" target="_blank">
+          <img src="https://picoflynx.oss-cn-guangzhou.aliyuncs.com/source/images/gallery/Sdpaint/00252-642878706-1girl%2Cwhite%20hair%2Cblack%20long%20dress%2C%28flower%20background_1.1%29%2C%28studio%20ghibli_1.2%29%2C.png" srcset="/img/loading.gif" lazyload alt="Hexo基于fluid模板的相册搭建">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/03/25/Hexo%E5%9F%BA%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%86%8C%E6%90%AD%E5%BB%BA/" target="_blank">
+          Hexo基于fluid模板的相册搭建
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2024/03/25/Hexo%E5%9F%BA%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%86%8C%E6%90%AD%E5%BB%BA/" target="_blank">
+        <div>
+          Hexo主要是用于发表博客也就是文章的静态网页框架工具，所以官方很少给到相册搭建的教程。而作为前端小白的我，尝试搭建网页的目的就是为了制作一个网页相册，为此，我死磕了接近一个星期，才大概把这个博客网页集成相册功能的方法搞懂。 Toc    搭建思路 文件夹分配 操作步骤  1.新建相册页面 2.处理图片信息 3.加载js和css文件 4.网页端图片加速   优化  简化create流程 简化oss
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-03-25 22:31" pubdate>
+              2024-03-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%9F%E4%BA%A7%E6%8C%87%E5%8D%97/" class="category-chain-item">生产指南</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%BD%91%E9%A1%B5%E6%90%AD%E5%BB%BA/">#网页搭建</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
